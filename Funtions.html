@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtions</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors (using funtions)</h1>
+    <button onclick="
+    result('rock');
+    ">Rock</button>
+    <button onclick="
+    result('paper');
+    ">Paper</button>
+    <button onclick="
+    
+    result('scissors');
+    ">Scissors</button>
+    <script>
+        function systemMove(){
+            const computerNo=Math.random();
+            let computerMove='';
+            if(computerNo>=0 && computerNo<1/3){
+                computerMove='rock';
+            }else if(computerNo>=1/3 && computerNo<2/3){
+                computerMove='paper';
+            }else{
+                computerMove='Scissors';
+            }
+        return computerMove;
+        }
+        function result(move){
+            let computerMove=systemMove();
+            let res='';
+            if(move==='rock'){
+                
+                if(computerMove==='rock'){
+                    res= 'tie';
+                }else if(computerMove==='paper'){
+                    res='loose';
+                }else{
+                    res = 'win';
+                }
+
+            }else if(move==='scissors'){
+                if(computerMove==='rock'){
+                    res= 'loose';
+                }else if(computerMove==='paper'){
+                    res='win';
+                }else{
+                    res = 'tie';
+                }
+            }else if(move==='paper'){
+                if(computerMove==='rock'){
+                    res= 'win';
+                }else if(computerMove==='paper'){
+                    res='tie';
+                }else{
+                    res = 'loose';
+                }
+
+            }
+            alert(`you picked ${move} computer picked ${computerMove} result is ${res}`);
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+.rpcImages{
+    height: 70px;
+}
+.title-css{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.rpsButton-css{
+    height: 150px;;
+    width: 150px;
+    background-color: transparent;
+    padding: 30px;
+    border:3px solid white;
+    border-radius: 800px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.res-css{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.both-choice-css{
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 30px;
+}
+.reset-button-css{
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: beige;
+    border: 3px solid gray;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
