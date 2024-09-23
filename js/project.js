@@ -1,6 +1,7 @@
 function enterKey(event){
     if(event.key==='Enter'){
     calculateShipping();
+    
 }
 }
 function calculateShipping(){

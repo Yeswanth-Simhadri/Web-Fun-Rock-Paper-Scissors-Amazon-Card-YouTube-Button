@@ -1,6 +1,7 @@
 const values=JSON.parse(localStorage.getItem('final'))||{win:0,loose:0,tie:0}; 
 function resultStatements(){
-    document.querySelector('.allRes').innerHTML=`wins:${values.win} looses:${values.loose} ties:${values.tie}`;  
+    document.querySelector('.allRes').innerHTML=`wins:${values.win} looses:${values.loose} ties:${values.tie}`; 
+     
 } 
 function systemMove(){
     const computerNo=Math.random();
