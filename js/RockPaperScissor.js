@@ -53,7 +53,7 @@ function result(move){
     }
     localStorage.setItem('final',JSON.stringify(values));
     document.querySelector('.res-js').innerHTML=`${res}...`;
-    document.querySelector('.both-choice').innerHTML=`computer: <img src="/image/${computerMove}-emoji.png" class="rpcImages">   <img src="/image/${move}-emoji.png" class="rpcImages">:you`
+    document.querySelector('.both-choice').innerHTML=`computer: <img src="/images/${computerMove}-emoji.png" class="rpcImages">   <img src="/images/${move}-emoji.png" class="rpcImages">:you`
     resultStatements();
     
 }
